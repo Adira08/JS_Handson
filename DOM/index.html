@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM - Assissment</title>
+</head>
+<body>
+    <!-- Question 1 -->
+    <div class="qOne question">
+        <p id="text">This is having id = 'text'</p>
+    </div>
+    <!-- Question 2 -->
+    <div class="qTwo question">
+        <h1 id="text">This is having tag as 'h1'</h1>
+    </div>
+    <!-- Question 3 -->
+    <div class="qThree question">
+        <div class="box">this iis having class as 'box'</div>
+    </div>
+    <!-- Question 4 -->
+    <div class="qFour question">
+        <p id="qFour">Hello</p>
+    </div>
+    <!-- Question 5 -->
+    <div class="qFive question">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+    </div>
+    <button onclick="changeDirection()" type="submit">Click to change</button>
+
+    <!-- Question 6 -->
+    <div class="qSix question">
+        <h2>Q6. What’s the difference between window vs document?</h2>
+        <p><strong>Ans. <u>Window object</u> :</strong> The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created.</p>
+        <p><strong><u>Document Object</u> :</strong> The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.</p>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="qSeven question">
+        <h1 id="textColor">Hello</h1>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="qEight question">
+        <h1 id="replacingText">Hello World</h1>
+        <button onclick="replaceText()">Replace Text</button>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="qNine question">
+        <div class="current_time">
+            <div class="time_area" onload="currentTime()">
+                <div class="time_text">TIME</div>
+                <div class="time_box"><span id="hours">00</span><br> hours</div>
+                <span class="seperator"> : </span>
+                <div class="time_box"><span id="mins">00</span><br> mins</div>
+                <span class="seperator"> : </span>
+                <div class="time_box"><span id="secs">00</span><br> secs</div>
+                <span class="seperator"> </span>
+                <div class="am_pm" id="am_pm">AM</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="qTen question">
+        <label for="year" id = "year1">Select Year:</label>
+        <select name="year" id="year">
+            <option value="2020-2021">2020-2021</option>
+            <option value="2021-2022">2021-2022</option>
+            <option value="2022-2023">2022-2023</option>
+            <option value="2023-2024">2023-2024</option>
+        </select>
+        <button id="btn">Selected Year</button>
+        <div class="yearselected"></div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="qEleven question">
+        <form action="">
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email" pattern=".+@prepbytes\.com" placeholder="Enter your Email id"><br>
+            <label for="number">Phone No. : </label>
+            <input type="text" name="number" id="number" placeholder="Add 91 before you mobile number"><span id="numberError"></span><br>
+            <label for="birthYear">Birth Year : </label>
+            <input type="number" name="birthYear" id="birthYear"><span id="yearError"></span><br>
+            <input type="submit" onclick="checkInputs()" id="submit" value="Submit">
+        </form>
+    </div>
+   
+
+    <!-- ====================== -->
+    <script src="index1.js"></script>
+    
+</body>
+</html>

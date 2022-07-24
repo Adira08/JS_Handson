@@ -1,0 +1,65 @@
+.question{
+    margin: 5%;
+}
+
+
+.qFive{
+    display: flex;
+    flex-direction: row;
+}
+.cards{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    margin: 20px;
+}
+
+
+.current_time{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+.time_area{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.time_text{
+    color: #3D087B;
+    font-size: 20px;
+    padding-top: 36px;
+    padding-bottom: 40xp;
+
+}
+.time_box{
+    height: 80px;
+    width: 80px;
+    background-color: #F6E2FF;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+    color: #5F0089;
+}
+.time_box>span{
+    font-size: 40px;
+    color: #8A11BF;
+}
+.seperator{
+    font-size: 40px;
+    padding-top: 20px;
+    color: #8A11BF;
+}
+.am_pm{
+    background-image: linear-gradient(to bottom right, #8E53F0,#B85EBF,#F25CFE);
+    color: white;
+    height: 64px;
+    width: 80px;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 16px;
+}
